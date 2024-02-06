@@ -1,0 +1,18 @@
+.maintable{width:100%; background: #c9c5b5; margin:0px auto;border: none;}
+.logo{width:250px}
+@page { margin:0;padding:0; } 
+.topmage{width:1748px;}
+.page_break { page-break-before: always; }
+.input-field input{
+         border-top: 0;
+         border-bottom: 1px solid #000;
+         border-right: 0;
+         border-left: 0;
+         width: 60%;
+         }
+         .input-field input:focus{
+         outline: none;
+         }
+         .address-txt p{
+         margin: 5px 0 0;
+         }

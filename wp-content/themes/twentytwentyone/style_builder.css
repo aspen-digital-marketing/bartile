@@ -1,0 +1,1694 @@
+body {
+    margin: 0;
+    padding : 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.profile-container {
+font-family: 'DM Sans', sans-serif;
+    padding: 15px 7%;
+    background: #000000;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+
+}
+.selections .selected {
+    display: flex;
+    align-items: center;
+    grid-gap: 9px;
+}
+
+.profile-container h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.selections .selected h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.selections .selected .check-box {
+       width: 16px;
+    margin: -3px 5px;
+}
+
+.selections .selected  {
+    padding: 10px;
+         width: auto;
+    text-align: center;
+        display: inline-flex;
+    justify-content: center;
+}
+
+.container-builder {
+    display: flex;
+    width: 95%;
+    margin-left: auto;
+    max-height: 88vh;
+    overflow: hidden;
+
+}
+.Main-selection_box {
+    padding-top: 8%;
+    display: flex;
+        width: 90%;
+    margin: auto;
+}
+.Main-selection_box ul {
+        align-items: center;
+    display: flex;
+}
+.Main-selection_box li {
+    border: 1px solid #D9BBB9;
+    background: #F1F1F1;
+    padding: 4px 10px;
+    margin: 0 15px;
+    list-style: none;
+}
+.Main-selection_box a {
+    font-family: 'DM Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+        .Main-selection_box .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .Main-selection_box .dropdown-content {
+            display: none;
+            position: absolute;
+               left: 0px;
+    top: 30px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .Main-selection_box .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+  .Main-selection_box  img.Dropdown {
+    width: 15px;
+}
+        .Main-selection_box .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .Main-selection_box .dropdown-content a{
+            font-size:14px !important;
+        }
+.builder-images .main-image {
+    width: 100%;
+}
+
+.builder-options {
+    flex-basis: 30%;
+    padding-left: 40px;
+       padding-right: 2.5vw;
+    overflow: scroll;
+    max-height: 90vh;
+}
+
+.builder-images {
+    flex-basis: 70%;
+    overflow: scroll;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.builder-images::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .builder-images {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.builder-images h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.builder-images p {
+    margin-top: 10px;
+}
+
+a.primary-btn {
+    padding: 12px 30px;
+    display: inline-flex;
+    margin-bottom: 15px;
+    background: #890A00;
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.builder-image-header {
+    display: flex;
+        justify-content: space-between;
+    align-items: center;
+}
+
+.builder-btn {
+    flex-basis: 25%;
+}
+
+.builder-title {
+    flex-basis: 75%;
+    margin: 20px 0;
+}
+
+.builder-options h1 {
+    font-size: 23px;
+}
+
+.builder-options .gray-color {
+    color: #A3A3A3;
+}
+
+.texture-type , .exclusive-design-type , .edge-design-type , .Weight-type, .Layout-type, .Trim-type{
+    padding: 10px;
+    border: 1px solid #cbcbcb;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.texture-type h1, .exclusive-design-type h1 , .edge-design-type h1 , .Weight-type h1, .Trim-type h1, .Layout-type h1 {
+    margin: 0;
+}
+
+.texture-type p, .exclusive-design-type p , .edge-design-type p , .Weight-type p, .Trim-type p, .Layout-type p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.texture-type h1, .exclusive-design-type h1 , .edge-design-type h1, .Trim-type h1, .Layout-type h1 {
+    font-size: 18px;
+}
+
+.pattern-box {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 11px;
+    border-radius: 6px;
+    background-size: 100% auto;
+}
+.Cobblestone.pattern-box {
+    background: url(./img/Cobblestonenew.jpg);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Vintage {
+    background: url(./img/VintageSlate.png);
+    background-size: 100% 100%;
+}
+.Vintage-Slate.pattern-box{
+    background: url(./img/Vintage-Slate.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Swirl-Brush {
+    background: url(./img/SwirlBrushnew.jpg);
+    background-size: 100% 100%;
+}
+.Oval-USR.pattern-box {
+    background: url(./img/OVAl.png);
+    background-size: 100% 100%;
+}
+.\34 5-degree-SH.pattern-box {
+    background: url(./img/45degreeSH.jpg);
+    background-size: 100% 100%;
+}
+.Metal-rake-small.pattern-box {
+    background: url(./img/Metal-rake-small.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Standard {
+    background: url(./img/layoutStandard.jpg);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Old-Mission {
+    background: url(./img/Old-Mission.jpg);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Factory-Blend-Old-Mission {
+    background: url(./img/Factory-Blend-Old-Mission.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Split-Timber-Cottage-Resticut {
+    background: url(./img/Split-Timber-Cottage-Resticut.png);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Split-Timber-Resticut {
+    background: url(./img/Split-Timber-Resticut.png);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Manchester {
+    background: url(./img/Manchester.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Newcastle {
+    background: url(./img/Newcastlenew.jpg);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Super-duty {
+    background: url(./img/sufacetexturevintageoption.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Suface-Texture-Vintage-Option{
+    background: url(./img/sufacetexturevintageoption.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Cottage-Stagger{
+    background: url(./img/CottageStagger.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Black-Smoking-Cottage{
+    background: url(./img/black-smoking-Cottage.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Surface-Texture-Standard{
+    background: url(./img/surface-texture-standard.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Ultralite {
+    background: url(./img/Ultralite.jpg);
+    background-size: 100% 100%;
+}
+
+.pattern-box.Standard-weight {
+    background: url(./img/Standardweight.jpg);
+    background-size: 100% 100%;
+}
+.pattern-box.Cottage-Slate-Closeup {
+    background: url(./img/Cottage-Slate-Closeup.png);
+    background-size: 100% 100%;
+}
+.pattern-box.Saddle-Blend-Cottage  {
+    background: url(./img/Saddle-Blend-Cottage.png);
+    background-size: 100% 100%;
+}
+.Rakes.pattern-box  {
+    background: url(./img/rakes.png);
+    background-size: 100% 100%;
+}
+.pattern-box.Hip\/Ridge-option  {
+    background: url(./img/Solid-Gable-Tile.png);
+    background-size: 100% 100%;
+}
+.additional-charges {
+      display: flex;
+    align-items: flex-start;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    background: #dcdcdc80;
+    padding: 10px 35px;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+img.info-icon {
+    width: 15px;
+}
+.additional-charges p {
+    font-size: 12px;
+    margin: 0;
+}
+.builder-options .active {
+    border-color: #890a00;
+    border-width: 2px;
+    position: relative;
+      background: #890a000d !important;
+}
+
+.builder-options .active:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    width: 20px;
+    height: 20px;
+    background: url(./img/check.png);
+    background-size: 100% 100%;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.builder-options::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .builder-options {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .color-options {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+}
+
+.container-selected-options {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    grid-gap: 20px;
+    flex-direction: column;
+        margin-bottom: 50px;
+}
+
+.container-selected-options .main-image {
+    width: 100%;
+}
+
+.selection-options-bar {
+     flex-basis: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px;
+}
+
+img.selected-img {
+    width: 100%;
+    max-width: 150px;
+    height: 100px;
+    border-radius: 7px;
+}
+
+small.options-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.color-type {
+    width: 60px;
+    border-radius: 50%;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 5px;
+}
+a.options-title {
+    position: relative;
+        width: 170px;
+}
+
+a.options-title h5 {
+    margin: 0;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #000000c2;
+    padding: 5px 10px;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 2px;
+}
+
+.lightbox {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+
+
+.lightbox .gallery-image {
+    width: 800px;
+    display: block;
+    margin : auto;
+}
+
+.lightbox .close-btn {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.lightbox-active {
+    display: flex;
+}
+
+a.options-title .view-large {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+
+
+img.lightboxlightbox {
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%,-50%);
+    cursor: pointer;
+    z-index: 9;
+
+}
+
+
+a.genrate-pdf {
+    padding: 10px 18px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+    background: #890a00;
+    margin-top: 30px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info {
+    width: 80%;
+    position: fixed;
+    padding: 20px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%,-50%);
+    -webkit-box-shadow: 0px 6px 20px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 20px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 20px -1px rgba(0,0,0,0.75);
+    z-index: 9999999999;
+}
+.INlineinput {
+    display: flex;
+}
+.INlineinput input {
+    margin:5px;
+}
+textarea#additional-comments {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bfbfbf;
+    margin: 16px 0;
+    box-sizing: border-box;
+}
+form label {
+    font-size: 15px;
+    font-weight: 600;
+}
+.contact-info h1 {
+    margin: 0;
+    margin-bottom: 13px;
+}
+ #file-upload {
+    width: 100%;
+    height: 82px;
+    border: 1px dashed #890a00;
+    padding: 10px;
+    margin: 20px 0;
+    background: #890a000d;
+    box-sizing: border-box;
+}
+    /* Style for the "Choose File" button */
+  #file-upload::-webkit-file-upload-button {
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+    border: none;
+    text-align:center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+.checkbox{
+   display:flex;
+   justify-content: flex-start;
+   align-items: center;
+    margin: 10px 0;
+}
+form .checkbox input{
+   width:auto !important;
+   
+}
+ form .checkbox input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+     margin: 0 10px;
+  }
+
+  /* Checkmark style */
+form .checkbox input[type="checkbox"]:checked::before {
+    content: '\2713';
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    text-align: center;
+    margin-top: -8px;
+    width: 2px;
+    margin-left: -4px;
+}
+
+form.submit-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bfbfbf;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+
+form.submit-form  {
+    width: 100%;
+}
+
+.quote-submit {
+    background: #890a00;
+    font-family: 'DM Sans', sans-serif;
+    border-radius: 6px;
+    color : #fff;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+img.close-btn {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.contact-none {
+    display: none;
+}
+
+.contact-container {
+    display: flex;
+    grid-gap: 20px;
+}
+
+.content-table {
+    flex: 1;
+}
+
+form.submit-form {
+    width: 100%;
+    flex: 1;
+}
+
+.selection-options-bar-quote > .options-title > .selected-img {
+    width: 100px;
+}
+
+.selection-options-bar-quote {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 10px 10px;
+}
+
+.selection-options-bar-quote .options-title {
+    flex-basis: 100px !important;
+}
+
+.customer-information h1 {
+    font-size: 22px;
+}
+
+.selection-options-bar-quote .selected-img {
+    width: 140px !important;
+}
+
+.submit-header {
+    display: flex;
+    grid-gap: 10px;
+}
+
+
+.submit-header h1 {
+    flex-basis: 50%;
+ 
+}
+
+.submit-header h1 {
+    flex-basis: 50%;
+    font-size: 26px;
+    border-bottom: 1px solid #bdbdbd;
+    padding-bottom: 10px;
+}
+
+.additional-charges p {
+    font-size: 14px;
+}
+
+.profile-container h4 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.selections .selected h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+.pattern-box.Manchester:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/PropertyManchester.png) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+.pattern-box.Manchester {
+    position: relative;
+}
+.Cobblestone.pattern-box {
+    position: relative;
+}
+.Cobblestone.pattern-box:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/Cobblestonenew.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+.Vintage-Slate.pattern-box{
+    position: relative;
+}
+.Vintage-Slate.pattern-box:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/Vintage-Slate.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+.Oval-USR.pattern-box {
+    position: relative;
+}
+.Oval-USR.pattern-box:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/OVAl.png) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+.\34 5-degree-SH.pattern-box{ 
+position: relative;
+}
+.\34 5-degree-SH.pattern-box:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/45degreeSH.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+.Metal-rake-small.pattern-box{ 
+position: relative;
+}
+.Metal-rake-small.pattern-box:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/Metal-rake-small.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+.pattern-box.Vintage{ 
+position: relative;
+}
+.pattern-box.Vintage:hover::before {
+        content: "";
+    display: block;
+    position: absolute;
+       top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/VintageSlate.png) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+}
+
+.pattern-box.Newcastle{ 
+	position: relative;
+	}
+	.pattern-box.Newcastle:hover::before {
+			content: "";
+		display: block;
+		position: absolute;
+		    top: 0px;
+    left: 100%;
+		width: 300px;
+		height: 300px;
+		background: url(./img/Newcastlenew.jpg) no-repeat center center;
+		background-size: contain;
+		z-index: 999999999;
+	}
+	.pattern-box.Old-Mission{ 
+		position: relative;
+		}
+		.pattern-box.Old-Mission:hover::before {
+				content: "";
+			display: block;
+			position: absolute;
+			    top: 0px;
+    left: 100%;
+			width: 300px;
+			height: 300px;
+			background: url(./img/PropertyOldMission.png) no-repeat center center;
+			background-size: contain;
+			z-index: 999999999;
+		}
+		.pattern-box.Factory-Blend-Old-Mission{ 
+			position: relative;
+			}
+			.pattern-box.Factory-Blend-Old-Mission:hover::before {
+					content: "";
+				display: block;
+				position: absolute;
+				    top: 0px;
+    left: 100%;
+				width: 300px;
+				height: 300px;
+				background: url(./img/PropertyFactorBlendOldMission.png) no-repeat center center;
+				background-size:contain;
+				z-index: 999999999;
+			}
+			.pattern-box.Split-Timber-Cottage-Resticut{ 
+				position: relative;
+				}
+	.pattern-box.Split-Timber-Cottage-Resticut:hover::before {
+						content: "";
+					display: block;
+					position: absolute;
+					    top: 0px;
+    left: 100%;
+					width: 300px;
+					height: 300px;
+					background: url(./img/PropertySplitTimberCottageResticut.png) no-repeat center center;
+					background-size: contain;
+					z-index: 999999999;
+				}
+                 .pattern-box.Surface-Texture-Standard{ 
+                position: relative;  
+                }
+                .pattern-box.Surface-Texture-Standard:hover::before {
+							content: "";
+						display: block;
+						position: absolute;
+						    top: 0px;
+    left: 100%;
+						width: 300px;
+						height: 300px;
+						background: url(./img/surface-texture-standard.jpg) no-repeat center center;
+						background-size: contain;
+						z-index: 999999999;
+					}
+                .pattern-box.Suface-Texture-Vintage-Option{ 
+                position: relative;  
+                }
+                .pattern-box.Suface-Texture-Vintage-Option:hover::before {
+							content: "";
+						display: block;
+						position: absolute;
+						    top: 0px;
+    left: 100%;
+						width: 300px;
+						height: 300px;
+						background: url(./img/sufacetexturevintageoption.jpg) no-repeat center center;
+						background-size: contain;
+						z-index: 999999999;
+					}
+                      .pattern-box.Black-Smoking-Cottage{ 
+                position: relative;  
+                }
+                .pattern-box.Black-Smoking-Cottage:hover::before {
+							content: "";
+						display: block;
+						position: absolute;
+						    top: 0px;
+    left: 100%;
+						width: 300px;
+						height: 300px;
+						background: url(./img/black-smoking-Cottage.jpg) no-repeat center center;
+						background-size: contain;
+						z-index: 999999999;
+					}
+                       .pattern-box.Cottage-Stagger{ 
+                position: relative;  
+                }
+                .pattern-box.Cottage-Stagger:hover::before {
+							content: "";
+						display: block;
+						position: absolute;
+						    top: 0px;
+    left: 100%;
+						width: 300px;
+						height: 300px;
+						background: url(./img/CottageStagger.jpg) no-repeat center center;
+						background-size: contain;
+						z-index: 999999999;
+					}
+                   
+				.pattern-box.Super-duty{ 
+					position: relative;
+					}
+					.pattern-box.Super-duty:hover::before {
+							content: "";
+						display: block;
+						position: absolute;
+						    top: 0px;
+    left: 100%;
+						width: 300px;
+						height: 300px;
+						background: url(./img/sufacetexturevintageoption.jpg) no-repeat center center;
+						background-size: contain;
+						z-index: 999999999;
+					}
+					.pattern-box.Ultralite{ 
+						position: relative;
+						}
+						.pattern-box.Ultralite:hover::before {
+								content: "";
+							display: block;
+							position: absolute;
+							    top: 0px;
+    left: 100%;
+							width: 300px;
+							height: 300px;
+							background: url(./img/Ultralite.jpg) no-repeat center center;
+							background-size: contain;
+							z-index: 999999999;
+						}
+						.pattern-box.Cottage-Slate-Closeup{ 
+							position: relative;
+							}
+							.pattern-box.Cottage-Slate-Closeup:hover::before {
+									content: "";
+								display: block;
+								position: absolute;
+								    top: 0px;
+    left: 100%;
+								width: 300px;
+								height: 300px;
+								background: url(./img/PropertyCottageSlateCloseup.png) no-repeat center center;
+								background-size: contain;
+								z-index: 999999999;
+							}
+							.pattern-box.Saddle-Blend-Cottage{ 
+								position: relative;
+								}
+								.pattern-box.Saddle-Blend-Cottage:hover::before {
+										content: "";
+									display: block;
+									position: absolute;
+									    top: 0px;
+    left: 100%;
+									width: 300px;
+									height: 300px;
+									background: url(./img/PropertySaddleBlendCottage.png) no-repeat center center;
+									background-size: contain;
+									z-index: 999999999;
+								}
+								.Rakes.pattern-box{ 
+									position: relative;
+									}
+									.Rakes.pattern-box:hover::before {
+											content: "";
+										display: block;
+										position: absolute;
+										    top: 0px;
+    left: 100%;
+										width: 300px;
+										height: 300px;
+										background: url(./img/Propertyrakes.png) no-repeat center center;
+										background-size: contain;
+										z-index: 999999999;
+									}
+									.pattern-box.Hip\/Ridge-option{ 
+										position: relative;
+										}
+										.pattern-box.Hip\/Ridge-option:hover::before {
+												content: "";
+											display: block;
+											position: absolute;
+											    top: 0px;
+    left: 100%;
+											width: 300px;
+											height: 300px;
+											background: url(./img/PropertySolidGableTile.png) no-repeat center center;
+											background-size: contain;
+											z-index: 999999999;
+										}
+                                        .pattern-box.Split-Timber-Resticut{ 
+										position: relative;
+										}
+										.pattern-box.Split-Timber-Resticut:hover::before {
+												content: "";
+											display: block;
+											position: absolute;
+											    top: 0px;
+    left: 100%;
+											width: 300px;
+											height: 300px;
+											background: url(./img/PropertySplitTimberResticut.png) no-repeat center center;
+											background-size: contain;
+											z-index: 999999999;
+										}
+   .additional-charges p {
+    font-size: 12px;
+}
+
+.additional-charges {
+    display: flex;
+    align-items: flex-start;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    background: #dcdcdc80;
+    padding: 10px 12px;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+.Straight-Brush.pattern-box{
+    background: url(./img/StraightBrush.jpg);
+    background-size: 100% 100%;
+}
+.Standard-Surface.pattern-box{
+    background: url(./img/StandardSurface.jpg);
+    background-size: 100% 100%;
+}
+.Standard-edge.pattern-box{
+    background: url(./img/Standardedge.jpg);
+    background-size: 100% 100%;
+}
+.Ruff-Cut.pattern-box{
+    background: url(./img/Ruffcut.jpg);
+    background-size: 100% 100%;
+        border: 1px solid #a7a7a7;
+}
+.Cottage.pattern-box{
+    background: url(./img/Cottagenew.jpg);
+    background-size: 100% 100%;
+}
+.Random-Cottage.pattern-box{
+    background: url(./img/RandomCottagenew.jpg);
+    background-size: 100% 100%;
+}
+.Bell-Ridge.pattern-box{
+  background: url(./img/BellRidge.jpg);
+    background-size: 100% 100%;
+}
+.\39 0-degree-Rake-LUR.pattern-box{
+  background: url(./img/degreeRake.jpg);
+    background-size: 100% 100%;
+}
+.\39 0-deg\.-tile-rakes.pattern-box{
+    background: url(./img/selection/90-deg.-tile-rakes.png);
+    background-size: 100% 100%;
+}
+.Oval-Rake-USR.pattern-box{
+  background: url(./img/OvalRakeUSR.jpg);
+    background-size: 100% 100%;
+}
+.Oval-tile-rakes.pattern-box{
+    background: url(./img/Oval-tile-rakes.png);
+    background-size: 100% 100%;
+}
+.Metal-rake.pattern-box{
+  background: url(./img/RakeMetal.jpg);
+    background-size: 100% 100%;
+}
+.Standard-Hip-and-Ridge-SH.pattern-box{
+  background: url(./img/StandardHipandRidgeSH.jpg);
+    background-size: 100% 100%;
+}
+.Steep-Ridge.pattern-box{
+  background: url(./img/SteepRidge.jpg);
+    background-size: 100% 100%;
+}
+.Hip-Ridge.pattern-box{
+  background: url(./img/Hip-Ridge.jpg);
+    background-size: 100% 100%;
+}
+.\34 5-deg\.-hip-ridge.pattern-box{
+   background: url(./img/selection/45deg-hip-ridge.png);
+    background-size: 100% 100%;
+}
+.oval-hip-ridge.pattern-box{
+   background: url(./img/Hip-Ridge.jpg);
+    background-size: 100% 100%;
+}
+.Toscana.pattern-box{
+   background: url(./img/selection/Toscana.png);
+    background-size: 100% 100%;
+}
+.Standard-Cut.pattern-box{
+   background: url(./img/Standard-Cut.jpg);
+    background-size: 100% 100%;
+}
+.Oval-Hip-and-Ridge-USR.pattern-box{
+  background: url(./img/OvalHipRidgeUSR.jpg);
+    background-size: 100% 100%;
+}
+.Legendary-Slate.pattern-box{
+    background: url(./img/legendary-slate.png);
+    background-size: 100% 100%;
+}
+.English-Bell-Ridge.pattern-box{
+  background: url(./img/English-Bell-Ridge.jpg);
+    background-size: 100% 100%;
+}
+.Signature-Slate.pattern-box{
+  background: url(./img/SignatureSlate.jpg);
+    background-size: 100% 100%;
+}
+.Rusticut.pattern-box{
+  background: url(./img/Rusticut.jpg);
+    background-size: 100% 100%;
+}
+.Toscana-Cottage.pattern-box{
+  background: url(./img/ToscanaCottage.jpg);
+    background-size: 100% 100%;
+}
+.Yorkshire-Cottage.pattern-box{
+  background: url(./img/ultra.png);
+    background-size: 100% 100%;
+}
+.Yorkshire-Straight-Course.pattern-box{
+  background: url(./img/ultra.png);
+    background-size: 100% 100%;
+}
+.\34 5-deg\.-hip-ridge.pattern-box{
+position: relative;
+}
+.\34 5-deg\.-hip-ridge.pattern-box:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/SwirlBrushnew.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+    .Toscana.pattern-box{
+position: relative;
+}
+.Toscana.pattern-box:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/selection/Toscana.png) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+    .Standard-Cut.pattern-box{
+position: relative;
+}
+.Standard-Cut.pattern-box:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/selection/Standard-Cut.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+.oval-hip-ridge.pattern-box{
+position: relative;
+}
+.oval-hip-ridge.pattern-box:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/SwirlBrushnew.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+.pattern-box.Swirl-Brush{
+position: relative;
+}
+.pattern-box.Swirl-Brush:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/SwirlBrushnew.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+ .Straight-Brush.pattern-box{
+       position: relative;
+  }
+.Straight-Brush.pattern-box:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/StraightBrush.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+  .Standard-Surface.pattern-box{
+       position: relative;
+  }
+.Standard-Surface.pattern-box:hover::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 300px;
+    height: 300px;
+    background: url(./img/StandardSurface.jpg) no-repeat center center;
+    background-size: contain;
+    z-index: 999999999;
+    }
+.\39 0-deg\.-tile-rakes.pattern-box {
+  position: relative;
+}
+.\39 0-deg\.-tile-rakes.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Propertyrakes.png) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+
+.Standard-edge.pattern-box {
+  position: relative;
+}
+.Standard-edge.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Standardedge.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Ruff-Cut.pattern-box {
+  position: relative;
+}
+.Ruff-Cut.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Ruffcut.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Cottage.pattern-box {
+  position: relative;
+}
+.Cottage.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Cottagenew.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Random-Cottage.pattern-box {
+  position: relative;
+}
+.Random-Cottage.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/RandomCottagenew.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Bell-Ridge.pattern-box {
+  position: relative;
+}
+.Bell-Ridge.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/BellRidge.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.\39 0-degree-Rake-LUR.pattern-box {
+  position: relative;
+}
+.\39 0-degree-Rake-LUR.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/degreeRake.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Legendary-Slate.pattern-box{
+  position: relative;
+}
+.Legendary-Slate.pattern-box:hover::before{
+content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/legendary-slate.png) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Hip-Ridge.pattern-box{
+  position: relative;
+}
+.Hip-Ridge.pattern-box:hover::before{
+content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Hip-Ridge.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Oval-tile-rakes.pattern-box{
+  position: relative;
+}
+.Oval-tile-rakes.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Oval-tile-rakes.png) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Oval-Rake-USR.pattern-box {
+  position: relative;
+}
+.Oval-Rake-USR.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/OvalRakeUSR.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Metal-rake.pattern-box {
+  position: relative;
+}
+.Metal-rake.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/RakeMetal.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Standard-Hip-and-Ridge-SH.pattern-box {
+  position: relative;
+}
+.Standard-Hip-and-Ridge-SH.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/StandardHipandRidgeSH.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Steep-Ridge.pattern-box {
+  position: relative;
+}
+.Steep-Ridge.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/SteepRidge.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Oval-Hip-and-Ridge-USR.pattern-box{
+  position: relative;
+}
+.Oval-Hip-and-Ridge-USR.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/OvalHipRidgeUSR.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.English-Bell-Ridge.pattern-box {
+  position: relative;
+}
+.English-Bell-Ridge.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/English-Bell-Ridge.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Signature-Slate.pattern-box {
+  position: relative;
+}
+.Signature-Slate.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/SignatureSlate.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Rusticut.pattern-box {
+  position: relative;
+}
+.Rusticut.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Rusticut.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Toscana-Cottage.pattern-box {
+  position: relative;
+}
+.Toscana-Cottage.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/ToscanaCottage.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Yorkshire-Cottage.pattern-box {
+  position: relative;
+}
+.Yorkshire-Cottage.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/selection/Yorkshire-Cottage.png) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.Yorkshire-Straight-Course.pattern-box {
+  position: relative;
+}
+.Yorkshire-Straight-Course.pattern-box:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/selection/Yorkshire-Cottage.png) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.pattern-box.Standard {
+    position: relative;
+}
+.pattern-box.Standard:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/layoutStandard.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+.pattern-box.Standard-weight  {
+  position: relative;
+}
+.pattern-box.Standard-weight:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background: url(./img/Standardweight.jpg) no-repeat center center;
+  background-size: contain;
+  z-index: 999999999;
+}
+@media (max-width: 1000px) {
+  .contact-container {
+    display: block;
+    }
+    .Main-selection_box {
+    padding-top: 30%;
+        display: block;
+    }
+    .Main-selection_box a {
+    font-size: 12px;
+    }
+    .Main-selection_box img.Dropdown {
+    width: 10px;
+}
+    .Main-selection_box ul {
+      flex-wrap: wrap;
+     padding: 0!important;
+    }
+    .Main-selection_box li {
+    margin: 5px !important;
+    }
+    .container-builder {
+    display: block;margin: auto;    overflow: scroll;
+    }
+    .builder-options {
+    padding-left: 0px!important;
+    }
+.contact-info {
+    overflow: auto;
+    height: 100vh;
+    }
+    .builder-image-header {
+    display: block;
+    }
+    .submit-header {
+    display: block;
+    }
+    a.genrate-pdf {
+    margin: 20px 0 !important;
+    }
+    .selection-options-bar-quote {
+    margin: 20px 0;
+}
+    .selections .selected h1 {
+    font-size: 13px;
+}
+span.in_title{
+    margin:0 !important;
+}
+img.logoRed {
+    width: 200px;
+}
+
+}
+.d-none{
+display:none !important;
+}
+.Dissabeld {
+    background: #b0acac !important;
+}
+.Top_genrate-pdf{
+    margin:0 !important;
+}
+
+img.arrow-white {
+    transform: rotate(180deg);
+    background: transparent;
+}
+.builder-btn .primary-btn {
+    background: transparent;
+}
+span.in_title {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 400;
+    margin: 12px;
+}
+
+a.options-title h4 {
+    margin: 0;
+    margin-bottom: 8px;
+    color: #890a00;
+}
+.builder-btn a.primary-btn {
+    font-size: 23px;
+}
+.builder-btn img.arrow-white {
+    width: 30px;
+}
+
+
+.pattern-box:hover::before {
+    display : none !important;
+}

@@ -1,0 +1,7 @@
+{
+    "require": {
+      "sendgrid/sendgrid": "~7",
+      "sendinblue/api-v3-sdk": "8.x.x",
+        "dompdf/dompdf": "^2.0"
+    }
+  }
